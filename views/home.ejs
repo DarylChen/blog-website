@@ -7,7 +7,7 @@
     <% posts.forEach(function(post) { %>
     <h1><%= post.composeTitle %></h1>
     <span><%= post.composeBody.substring(0, 100) + " ..." %></span>
-    <a href="/posts/<%= post.composeTitle %>">Read more</a>
+    <a href="/posts/<%= post._id %>">Read more</a>
     <% }) %>
 </body>
 <%- include('partials/footer'); -%>
